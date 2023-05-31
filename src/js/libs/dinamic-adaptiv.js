@@ -3,7 +3,6 @@
 // e.x. data-da="item,2,992"
 
 // module.exports
-const yo = console.log('youipu');
 (function () {
 	let originalPositions = [];
 	let daElements = document.querySelectorAll('[data-da]');

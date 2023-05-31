@@ -1,44 +1,44 @@
-// accordion
-const accordionController = (accordionElem,speed) => {
-	const accordion = document.querySelector(accordionElem);
-	accordion.addEventListener('click', function (event) {
-		const click = event.target;
-		const accordionBtns = accordion.querySelectorAll('.accordion-btn');
-		const accordionContent = accordion.querySelectorAll('.accordion-content');
-		const accordionBox = accordion.querySelectorAll(".accordion-box")
-		if (click.closest('.accordion-btn')) {
-			const content = click.closest('.accordion-btn').nextElementSibling;
-			const accordionBtn = click.closest('.accordion-btn');
-			const box = click.closest('.accordion-btn').parentElement;
-			if (content.style.maxHeight || accordionBtn.closest(".active") || box.closest(".active")) {
-				box.classList.remove('active');
-				accordionBtn.classList.remove('active');
-				content.style.maxHeight = null;
+// // accordion
+// const accordionController = (accordionElem,speed) => {
+// 	const accordion = document.querySelector(accordionElem);
+// 	accordion.addEventListener('click', function (event) {
+// 		const click = event.target;
+// 		const accordionBtns = accordion.querySelectorAll('.accordion-btn');
+// 		const accordionContent = accordion.querySelectorAll('.accordion-content');
+// 		const accordionBox = accordion.querySelectorAll(".accordion-box")
+// 		if (click.closest('.accordion-btn')) {
+// 			const content = click.closest('.accordion-btn').nextElementSibling;
+// 			const accordionBtn = click.closest('.accordion-btn');
+// 			const box = click.closest('.accordion-btn').parentElement;
+// 			if (content.style.maxHeight || accordionBtn.closest(".active") || box.closest(".active")) {
+// 				box.classList.remove('active');
+// 				accordionBtn.classList.remove('active');
+// 				content.style.maxHeight = null;
 
-			} else {
-				if (accordion.closest('.turn')) {
-					accordionBox.forEach((el) => {
-						el.classList.remove('active')
-					});
-					accordionBtns.forEach((el) => {
-						el.classList.remove('active')
-					});
-					accordionContent.forEach((el) => {
-						el.style.maxHeight = null
-					});
-				}
-				setTimeout(() => {
-					content.style.maxHeight = "100vh"
-				}, speed);
-				content.style.maxHeight = content.scrollHeight + 'px';
-				accordionBtn.classList.add('active');
-				box.classList.add('active');
-			}
-		}
-		event.preventDefault();
-	});
-};
-accordionController('.accordion', 300);
+// 			} else {
+// 				if (accordion.closest('.turn')) {
+// 					accordionBox.forEach((el) => {
+// 						el.classList.remove('active')
+// 					});
+// 					accordionBtns.forEach((el) => {
+// 						el.classList.remove('active')
+// 					});
+// 					accordionContent.forEach((el) => {
+// 						el.style.maxHeight = null
+// 					});
+// 				}
+// 				setTimeout(() => {
+// 					content.style.maxHeight = "100vh"
+// 				}, speed);
+// 				content.style.maxHeight = content.scrollHeight + 'px';
+// 				accordionBtn.classList.add('active');
+// 				box.classList.add('active');
+// 			}
+// 		}
+// 		event.preventDefault();
+// 	});
+// };
+// accordionController('.accordion', 300);
 
 
 // class Accordion {

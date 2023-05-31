@@ -4,6 +4,7 @@ html {
 	scroll-behavior: smooth;
 }
 body {
+	background-color: #202020;
 	margin: 0;
 	&.lock-scroll {
 		overflow: hidden;
@@ -20,13 +21,19 @@ body {
 	margin: 0px auto;
 	min-height: 100%;
 	overflow: hidden;
+	background-color: #070707;
 	font-family: Montserrat, Arial;
 }
 @import "config/_null-style";
 @import "config/_fonts";
 @import "config/_repeat-class";
 @import "config/_icon-fonts";
+@import "libs/slider";
 @import "layout/_header";
+@import "layout/main-sections/first";
+@import "layout/main-sections/service";
+@import "layout/main-sections/example";
+@import "layout/main-sections/offer";
 @import "layout/_main";
 @import "layout/_footer";
-@import "layout/main-sections/first";
+
