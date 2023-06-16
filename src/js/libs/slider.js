@@ -25,3 +25,13 @@ const swiperOffer = new Swiper (".offer__slider",{
     prevEl: '.swiper-button-prev',
   },
 })
+
+
+const swiperReviews = new Swiper (".reviews__slider",{
+  modules: [Navigation, Pagination],
+  slidesPerView:1,
+  navigation:{
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+})

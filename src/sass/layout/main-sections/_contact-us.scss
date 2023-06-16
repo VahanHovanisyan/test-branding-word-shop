@@ -1,0 +1,53 @@
+.contact-us {
+  &__container {
+  }
+
+  &__content {
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+
+  &__feedback {
+    display: flex;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 50%;
+  }
+
+  &__input {
+    max-width: 455px;
+    padding: 20px 40px;
+    background-color: #111111;
+    transform: skewX(-5deg);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    &::placeholder {
+      color: var(--yellow);
+    }
+  }
+
+  &__submit {
+    align-items: start;
+  }
+
+  &__socials {
+  }
+
+  &__map {
+    flex: 0 1 50%;
+  }
+
+  &__iframe {
+  }
+
+  &__info-list {
+  }
+}

@@ -1,0 +1,43 @@
+section.contact-us 
+  .contact-us__container.container
+    .contact-us__content
+      h2.contact-us__title.title Свяжитесь с  <span class="title-word-important">нами</span>
+        span.contact-us__subtitle.subtitle Это бысто и удобно
+    .contact-us__feedback 
+      form.contact-us__form.form(action="#", method="post", enctype="multipart/form-data") 
+        input.form__input.contact-us__input(type="text", name="user-name", placeholder="Ваше имя")
+        input.form__input.contact-us__input(type="email", name="user-email", placeholder="Email")
+        input.form__input.contact-us__input(type="tel", name="user-phone", placeholder="Телефон")
+        input.form__input.contact-us__input(type="text", name="user-note", placeholder="Примечание")
+        button.form__submit.contact-us__submit(type="submit") Отправить
+        ul.contact-us__socials.socials 
+          li.socials__item 
+            a.socials__link(href="#", target="_blank") 
+              svg.socials__icon 
+                use(xlink:href="img/sprite.svg#telegram")
+          li.socials__item 
+            a.socials__link(href="#", target="_blank") 
+              svg.socials__icon 
+                use(xlink:href="img/sprite.svg#viber")
+      .contact-us__map 
+        <iframe class="contact-us__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48789.29563064303!2d44.3056128!3d40.157184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sam!4v1686318494428!5m2!1sru!2sam" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    ul.contact-us__info-list.info-list
+      li.info-list__item 
+        article.info-list__item-container 
+          svg.info-list__icon 
+            use(xlink:href="img/sprite.svg#calendar")
+          h3.info-list__title График
+          time.info-list__text ПН-ПТ:<br> 9:00 - 18:00
+      li.info-list__item 
+        article.info-list__item-container 
+          svg.info-list__icon 
+            use(xlink:href="img/sprite.svg#geolocation")
+          h3.info-list__title Карта
+          address.info-list__text г. Киев <br> ул. Название
+      li.info-list__item 
+        article.info-list__item-container 
+          svg.info-list__icon 
+            use(xlink:href="img/sprite.svg#phone")
+          h3.info-list__title Контакты
+          a.info-list__text(href="tel:+380999999999") +38(099)-999-99-99
+          a.info-list__text(href="mailto:gmailexamp@gmail.com") gmailexamp@gmail.com 

@@ -27,6 +27,12 @@ body {
 @import "config/_null-style";
 @import "config/_fonts";
 @import "config/_repeat-class";
+@import "components/burger";
+@import "components/menu";
+@import "components/form";
+@import "components/info-list";
+@import "components/socials";
+@import "components/product";
 @import "config/_icon-fonts";
 @import "libs/slider";
 @import "layout/_header";
@@ -34,6 +40,10 @@ body {
 @import "layout/main-sections/service";
 @import "layout/main-sections/example";
 @import "layout/main-sections/offer";
+@import "layout/main-sections/catalog";
+@import "layout/main-sections/reviews";
+@import "layout/main-sections/video-blog";
+@import "layout/main-sections/contact-us";
 @import "layout/_main";
 @import "layout/_footer";
 
