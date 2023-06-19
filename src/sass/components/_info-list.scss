@@ -1,17 +1,44 @@
 .info-list {
-
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
   &__item {
+    background: #1a1a1a;
+    border-radius: 40px 0px;
+    padding: 55px 0px 70px 0px;
+    min-width: 260px;
   }
 
   &__item-container {
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px 40px;
   }
 
   &__icon {
+    width: 60px;
+    height: 60px;
   }
 
   &__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: var(--white);
   }
 
   &__text {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
