@@ -1,5 +1,6 @@
 import "./libs/dinamic-adaptiv.js";
 import "./libs/slider.js";
+import "./libs/form-validate.js";
 import "./module/burger-menu.js";
 import "./module/accordion.js"
 import "./module/customSelect.js"
