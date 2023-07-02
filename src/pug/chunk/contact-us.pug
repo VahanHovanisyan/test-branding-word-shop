@@ -6,10 +6,14 @@ section.contact-us
     .contact-us__feedback 
       form.contact-us__form.form(action="#", method="post", enctype="multipart/form-data") 
         .contact-us__input-list
-          input.form__input.contact-us__input.contact-us__input_user-name(type="text", name="user-name", placeholder="Ваше имя")
-          input.form__input.contact-us__input.contact-us__input_user-email(type="email", name="user-email", placeholder="Email")
-          input.form__input.contact-us__input.contact-us__input_user-phone(type="tel", name="user-phone", placeholder="Телефон")
-          input.form__input.contact-us__input.contact-us__input_user-note(type="text", name="user-note", placeholder="Примечание")
+          label.contact-us__label
+            input.form__input.contact-us__input.contact-us__input_user-name(type="text", name="user-name", placeholder="Ваше имя")
+          label.contact-us__label
+            input.form__input.contact-us__input.contact-us__input_user-email(type="email", name="user-email", placeholder="Email")
+          label.contact-us__label
+            input.form__input.contact-us__input.contact-us__input_user-phone(type="tel", name="user-phone", placeholder="Телефон")
+          label.contact-us__label
+            input.form__input.contact-us__input.contact-us__input_user-note(type="text", name="user-note", placeholder="Примечание")
         button.form__submit.contact-us__submit.btn(type="submit") Отправить
         ul.contact-us__socials.socials 
           li.socials__item 
@@ -28,7 +32,7 @@ section.contact-us
           svg.info-list__icon 
             use(xlink:href="img/sprite.svg#calendar")
           h3.info-list__title График
-          time.info-list__text ПН-ПТ:<br> 9:00 - 18:00
+          span.info-list__text.info-list__text_time ПН-ПТ: 9:00-18:00
       li.info-list__item 
         article.info-list__item-container 
           svg.info-list__icon 

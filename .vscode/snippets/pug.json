@@ -1,0 +1,23 @@
+{
+  "svguse": {
+    "scope": "pug",
+    "prefix": "use",
+    "body": [
+      "svg.$1",
+      "  use(xlink:href=\"img/sprite.svg#$2\")"
+    ],
+    "description": "Snippet for use svg sprites"
+  },
+  "burger": {
+    "scope": "pug",
+    "prefix": "burger",
+    "body": [
+      "button.burger (aria-label=\"Открыть меню\" aria-expanded=\"false\" data-burger)",
+      "  span.burger__line burger__line_top",
+			"  span.burger__line burger__line_middle",
+			"  span.burger__line burger__line_bottom"
+    ],
+    "description": "Snippet for burger btn"
+  }
+
+}

@@ -1,4 +1,5 @@
 .contact-us {
+  padding-bottom: 155px;
   &__container {
   }
 
@@ -45,7 +46,7 @@
   }
 
   &__input {
-    max-width: 455px;
+    width: 100%;
     padding: 20px 40px;
     background-color: #111111;
     transform: skewX(-5deg);
@@ -53,12 +54,17 @@
     font-size: 16px;
     line-height: 130%;
     color:var(--yellow);
-    &:not(:last-child){
-      margin-bottom: 30px;
-    }
-
+    display: block;
+    
     &::placeholder {
       color: var(--yellow);
+    }
+  }
+
+  &__label{
+    max-width: 455px;
+    &:not(:last-child){
+      margin-bottom: 30px;
     }
   }
 
@@ -86,4 +92,6 @@
 
   &__info-list {
   }
+
+  
 }

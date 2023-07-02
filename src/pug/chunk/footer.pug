@@ -1,1 +1,43 @@
-footer footer
+footer.footer 
+	.footer__container.container 
+		.footer__box 
+			a.footer__logo.logo(href="#")
+				img(src="img/logo.png", alt="site logotype")
+			ul.footer__socials.socials 
+				li.socials__item 
+					a.socials__link(href="#", target="_blank") 
+						svg.socials__icon 
+							use(xlink:href="img/sprite.svg#telegram")
+				li.socials__item 
+					a.socials__link(href="#", target="_blank") 
+						svg.socials__icon 
+							use(xlink:href="img/sprite.svg#viber")
+		.footer__box
+			h2.footer__title Информация
+			ul.footer__list
+				li.footer__item
+					a.footer__link(href="#") Каталог 
+				li.footer__item
+					a.footer__link(href="#") О нас 
+				li.footer__item
+					a.footer__link(href="#") Доставка и оплата 
+				li.footer__item
+					a.footer__link(href="#") Возвращение 
+		.footer__box.footer__box_contact
+			h2.footer__title Контакты
+			ul.footer__list
+				li.footer__item
+					a.footer__link(href="#") Каталог 
+				li.footer__item
+					a.footer__link(href="#") О нас 
+				li.footer__item
+					a.footer__link(href="#") Доставка и оплата 
+				li.footer__item
+					a.footer__link(href="#") Возвращение
+		.footer__box 
+			h2.footer__title Узнавай о новинках первым
+			a.footer__link.footer__link_last(href="#") Получай от нас смс с сюрпризами
+			form.footer__form(action="#")
+				input.footer__input(type="email", name="user-email", placeholder="Email")
+				button.footer__submit.btn.btn-reset(type="submit") Отправить
+
